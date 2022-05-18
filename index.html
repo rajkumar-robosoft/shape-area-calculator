@@ -8,9 +8,7 @@
    </head>
    <body>
       <div class="App">
-         <header class="header">
-            <h2>Shape Calculator</h2>
-         </header>
+         <header class="header"><h2>Shape Calculator</h2></header>
          <srction class="main-container">
          <div class="welcome-container">
             <p>
@@ -72,7 +70,7 @@
                         </label>
                      </div>
                   </div>
-                  <button type="button" onclick="gotoStep2()">Go to Step 2</button>  or 
+                  <button type="button" onclick="gotoStep2()">Go to Step 2</button>&nbsp;&nbsp; or 
                   <button type="reset" class="btn-cancel" onclick="startOver()">Cancel</button>
                </form>
             </div>
@@ -91,73 +89,38 @@
                      <div class="shape-input-area hidden" id="rectangle-input">
                         <div>
                            <label>Length : </label>
-                           <input
-                              type="number"
-                              name="length"
-                              id="length"
-                              
-                              />
+                           <input type="number" name="length" id="length"/>
                         </div>
                         <div>
                            <label>Width : </label>
-                           <input
-                              type="number"
-                              name="width"
-                              id="width"
-                              />
+                           <input type="number" name="width" id="width"/>
                         </div>
                      </div>
                      <div class="shape-input-area hidden" id="circle-input"> 
                         <label>
                         Diameter:
-                        <input
-                           type="number"
-                           name="diameter"
-                           id="diameter"
-                           required
-                           />
+                        <input type="number" name="diameter" id="diameter"/>
                         </label>
                      </div>
                      <div class="shape-input-area hidden" id="square-input">
                         <label>
                         Side:
-                        <input
-                           type="number"
-                           name="side"
-                           id="side"
-                           required
-                           />
+                        <input type="number" name="side" id="side" />
                         </label>
                      </div>
                      <div class="shape-input-area hidden" id="ellipse-input">
                         <div>
                            <label>Major Axis : </label>
-                           <input
-                              type="number"
-                              name="major-axis"
-                              id="major-axis"
-                              required
-                              />
+                           <input type="number"name="major-axis" id="major-axis"/>
                         </div>
                         <div>
                            <label>Minor Axis : </label>
-                           <input
-                              type="number"
-                              name="minor-axis"
-                              id="minor-axis"
-                              required
-                              />
+                           <input type="number" name="minor-axis" id="minor-axis"/>
                         </div>
                      </div>
                   </div>
-                  <button type="button" onclick="gotoStep3()">Go to Step 3</button>  or 
-                  <button
-                     type="reset"
-                     class="btn-cancel"
-                     onclick="startOver()"
-                     >
-                  Cancel
-                  </button>
+                  <button type="button" onclick="gotoStep3()">Go to Step 3</button>&nbsp;&nbsp; or 
+                  <button type="reset" class="btn-cancel" onclick="startOver()">Cancel</button>
                </form>
             </div>
             <!--Step 2 End-->
