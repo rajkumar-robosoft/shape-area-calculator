@@ -140,7 +140,13 @@ function gotoStep3() {
 //  Startover - Reset
 
 function startOver() {
-
+  
+  this.length = null;
+  this.width = null;
+  this.diameter = null;
+  this.side = null;
+  this.majorAxis = null;
+  this.minorAxis = null;
   document.getElementById("step-3").classList.add("hidden");
   document.getElementById("step-2").classList.add("hidden");
   document
@@ -149,5 +155,5 @@ function startOver() {
   document.getElementById("step1-form").reset();
   document.getElementById("step2-form").reset();
   document.getElementById("step-1").classList.remove("hidden");
-  
+
 }
