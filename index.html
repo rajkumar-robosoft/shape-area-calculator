@@ -30,28 +30,16 @@
                <form id="step1-form">
                   <div class="input-area">
                      <div class="radio">
-                        <label>
-                        <input type="radio" name="shape" value="Rectangle" id="rectangle"/>
-                        Rectangle
-                        </label>
+                        <label><input type="radio" name="shape" value="Rectangle" id="rectangle"/>Rectangle</label>
                      </div>
                      <div class="radio">
-                        <label>
-                        <input type="radio" name="shape" value="Circle" id="circle"/>
-                        Circle
-                        </label>
+                        <label><input type="radio" name="shape" value="Circle" id="circle"/>Circle</label>
                      </div>
                      <div class="radio">
-                        <label>
-                          <input type="radio" name="square" value="Square" id="square"/>
-                        Square
-                        </label>
+                        <label><input type="radio" name="square" value="Square" id="square"/>Square</label>
                      </div>
                      <div class="radio">
-                        <label>
-                          <input type="radio" name="ellipse" value="Ellipse" id="ellipse"/>
-                        Ellipse
-                        </label>
+                        <label><input type="radio" name="ellipse" value="Ellipse" id="ellipse"/>Ellipse</label>
                      </div>
                   </div>
                   <button type="button" onclick="gotoStep2()">Go to Step 2</button>&nbsp;&nbsp; or 
@@ -72,33 +60,29 @@
                   <div class="input-area">
                      <div class="shape-input-area hidden" id="rectangle-input">
                         <div>
-                           <label>Length : </label>
+                           <label for="length">Length : </label>
                            <input type="number" name="length" id="length"/>
                         </div>
                         <div>
-                           <label>Width : </label>
+                           <label for="width">Width : </label>
                            <input type="number" name="width" id="width"/>
                         </div>
                      </div>
                      <div class="shape-input-area hidden" id="circle-input"> 
-                        <label>
-                        Diameter:
+                        <label for="diameter">Diameter: </label>
                         <input type="number" name="diameter" id="diameter"/>
-                        </label>
                      </div>
                      <div class="shape-input-area hidden" id="square-input">
-                        <label>
-                        Side:
+                        <label for="side">Side:</label>
                         <input type="number" name="side" id="side" />
-                        </label>
-                     </div>
+                      </div>
                      <div class="shape-input-area hidden" id="ellipse-input">
                         <div>
-                           <label>Major Axis : </label>
+                           <label for="major-axis">Major Axis : </label>
                            <input type="number"name="major-axis" id="major-axis"/>
                         </div>
                         <div>
-                           <label>Minor Axis : </label>
+                           <label for="minor-axis">Minor Axis : </label>
                            <input type="number" name="minor-axis" id="minor-axis"/>
                         </div>
                      </div>
@@ -115,9 +99,7 @@
                   <p id="result-details"></p>
                   <p class="area-value" id="result-area"></p>
                </div>
-               <button type="button" onclick="startOver()">
-               Start Over
-               </button>
+               <button type="button" onclick="startOver()">Start Over</button>
             </div>
             <!--Step 3 End-->
          </div>
