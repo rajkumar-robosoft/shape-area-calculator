@@ -1,4 +1,5 @@
 // A constructor for defining a Rectangle
+
 class AreaOfRectangle {
   constructor(length, width) {
     this.length = length;
@@ -6,7 +7,9 @@ class AreaOfRectangle {
     this.area = this.length * this.width;
   }
 }
+
 // A constructor for defining a Circle
+
 class AreaOfCircle {
   constructor(diameter) {
     this.diameter = diameter;
@@ -14,14 +17,18 @@ class AreaOfCircle {
     this.area = (Math.PI * this.radius * this.radius).toFixed(2);
   }
 }
+
 // A constructor for defining a Square
+
 class AreaOfSquare {
   constructor(side) {
     this.side = side;
     this.area = this.side * this.side;
   }
 }
+
 // A constructor for defining a Ellipse
+
 class AreaOfEllipse {
   constructor(majorAxis, minorAxis) {
     this.majorAxis = majorAxis;
@@ -63,6 +70,7 @@ class ShapeFactory {
 }
 
 // Create an instance of our factory
+
 const shape = new ShapeFactory();
 
 function gotoStep2() {
