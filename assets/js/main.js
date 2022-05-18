@@ -54,6 +54,7 @@ class AreaOfEllipse {
 class ShapeFactory {
 
   createShape(type, props) {
+    
     switch (type) {
       case "Rectangle":
         document.getElementById(
@@ -78,6 +79,10 @@ class ShapeFactory {
           "result-details"
         ).innerHTML = `You have selected a <b>${type}</b> with a minor axis of ${props.minorAxis} and major axis of ${props.majorAxis}. Below is your result:`;
         return new AreaOfEllipse(props.majorAxis, props.minorAxis);
+
+        //default: null;
+
+
     }
   }
 }
@@ -140,7 +145,7 @@ function gotoStep3() {
 //  Startover - Reset
 
 function startOver() {
-  
+
   this.length = null;
   this.width = null;
   this.diameter = null;
