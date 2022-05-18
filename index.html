@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Shape Area Calculator</title>
+      <meta charset="utf-8">
+      <meta name="view-port" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/css/style.css">
+   </head>
+   <body>
+      <div class="App">
+         <header class="header">
+            <h2>Shape Calculator</h2>
+         </header>
+         <srction class="main-container">
+         <div class="welcome-container">
+            <p>
+               <b>
+               Shape Calculator is an interactive web application. To the right
+               you will find the 3 step application. Follow the instructions in
+               each step. Clicking cancel will take you back to step 1. Enjoy!
+               </b>
+            </p>
+            <p>
+               A small river named Duden flows by their place and supplies it with
+               the necessary regelialia. It is a paradisematic country, in which
+               roasted parts of sentences fly into your mouth.
+            </p>
+            <p>
+               Even the all-powerful Pointing has no control about the blind texts
+               it is an almost unorthographic life One day however a small line of
+               blind text by the name of Lorem Ipsum decided to leave for the far
+               World of Grammar. The Big Oxmox advised her not to do so, because
+               there were thousands of bad Commas.
+            </p>
+         </div>
+         <div class="calculator-container">
+            <!--Step 1 Start-->
+            <div id="step-1">
+               <div class="desc">
+                  <h4>Step 1 : Select your shape</h4>
+                  <p>
+                     Please select the shape that you would like to calculate the area of
+                     and press the button "Go to step 2"
+                  </p>
+                  <p class="error-msg" id="error-msg">
+                  </p>
+               </div>
+               <form id="step1-form">
+                  <div class="input-area">
+                     <div class="radio">
+                        <label>
+                        <input
+                           type="radio"
+                           name="shape"
+                           value="Rectangle"
+                           id="rectangle"
+                           required
+                           />
+                        Rectangle
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label>
+                        <input
+                           type="radio"
+                           name="shape"
+                           value="Circle"
+                           id="circle"
+                           required
+                           />
+                        Circle
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label>
+                        <input
+                           type="radio"
+                           name="shape"
+                           value="Square"
+                           id="square"
+                           required
+                           />
+                        Square
+                        </label>
+                     </div>
+                     <div class="radio">
+                        <label>
+                        <input
+                           type="radio"
+                           name="shape"
+                           value="Ellipse"
+                           id="ellipse"
+                           required
+                           />
+                        Ellipse
+                        </label>
+                     </div>
+                  </div>
+                  <button type="button" onclick="gotoStep2()">Go to Step 2</button>  or 
+                  <button type="reset" class="btn-cancel" onclick="startOver()">Cancel</button>
+               </form>
+            </div>
+            <!--Step 1 End-->
+            <!--Step 2 Start-->
+            <div id="step-2" class="hidden">
+               <div class="desc">
+                  <h4>Step 2 : Insert your values</h4>
+                  <p>
+                     You have selected a <b id="selected-shape"></b>, please input the required
+                     variables.
+                  </p>
+               </div>
+               <form id="step2-form" >
+                  <div class="input-area">
+                     <div class="shape-input-area hidden" id="rectangle-input">
+                        <div>
+                           <label>Length : </label>
+                           <input
+                              type="number"
+                              name="length"
+                              id="length"
+                              
+                              />
+                        </div>
+                        <div>
+                           <label>Width : </label>
+                           <input
+                              type="number"
+                              name="width"
+                              id="width"
+                              />
+                        </div>
+                     </div>
+                     <div class="shape-input-area hidden" id="circle-input"> 
+                        <label>
+                        Diameter:
+                        <input
+                           type="number"
+                           name="diameter"
+                           id="diameter"
+                           required
+                           />
+                        </label>
+                     </div>
+                     <div class="shape-input-area hidden" id="square-input">
+                        <label>
+                        Side:
+                        <input
+                           type="number"
+                           name="side"
+                           id="side"
+                           required
+                           />
+                        </label>
+                     </div>
+                     <div class="shape-input-area hidden" id="ellipse-input">
+                        <div>
+                           <label>Major Axis : </label>
+                           <input
+                              type="number"
+                              name="major-axis"
+                              id="major-axis"
+                              required
+                              />
+                        </div>
+                        <div>
+                           <label>Minor Axis : </label>
+                           <input
+                              type="number"
+                              name="minor-axis"
+                              id="minor-axis"
+                              required
+                              />
+                        </div>
+                     </div>
+                  </div>
+                  <button type="button" onclick="gotoStep3()">Go to Step 3</button>  or 
+                  <button
+                     type="reset"
+                     class="btn-cancel"
+                     onclick="startOver()"
+                     >
+                  Cancel
+                  </button>
+               </form>
+            </div>
+            <!--Step 2 End-->
+            <!--Step 3 Start-->
+            <div id="step-3" class="hidden">
+               <h4>Step 3 : Your results</h4>
+               <div class="input-area" id="area-details">
+                  <p id="result-details"></p>
+                  <p class="area-value" id="result-area"></p>
+               </div>
+               <button type="button" onclick="startOver()">
+               Start Over
+               </button>
+            </div>
+            <!--Step 3 End-->
+         </div>
+         <div class="ads-area">
+         </div>
+         </section>
+      </div>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
