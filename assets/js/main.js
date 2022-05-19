@@ -139,7 +139,7 @@ function gotoStep3() {
     majorAxis,
     minorAxis,
   }).area;
-  document.getElementById("result-area").innerHTML = `The Area is ${area}`;
+  document.getElementById("result-area").innerHTML = `The Area is <b class='area-calc'>${area}</b>`;
 }
 
 //  Startover - Reset

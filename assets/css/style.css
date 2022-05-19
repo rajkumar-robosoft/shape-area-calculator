@@ -7,17 +7,14 @@ body {
     padding: 0;
   }
   .header {
-    width: 92%;
-    background-color: #ccc;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    padding: 0 4%;
+    width: 96%;
+    margin: 0 auto;
   }
-  .header h2 {
-    padding: 0;
-    margin: 0;
-    font-size: 32px;
+  .header img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-top:10px;
   }
   .main-container {
     display: flex;
@@ -29,11 +26,11 @@ body {
     padding-right: 5%;
   }
   .welcome-container h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
   .welcome-container p {
-    font-size: 18x;
-    line-height: 28px;
+    font-size:20x;
+    line-height:30px;
   }
   .calculator-container {
     width: 30%;
@@ -109,11 +106,20 @@ body {
     margin-left: 1.5%;
     text-align: center;
   }
+  .ads-area span{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight:600;
+  }
   .area-value {
-    font-size:20px;
+    font-size:24px;
     font-weight: 600;
     padding: 30px 5px;
     min-height: 140px;
+  }
+  .area-calc {
+    font-size:26px;
+
   }
   .error-msg {
     color: red;
